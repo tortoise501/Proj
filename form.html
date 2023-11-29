@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action.php">
+        <label for="e-mail">Give me your E-mail</label>
+        <input type="email" id="e-mail" placeholder="Type your E-mail">
+        <br>
+        <label for="name">How can i call you</label>
+        <input type="text" placeholder="type your name">
+        <br>
+        <label for="message_type">Select type of your massage</label>
+        <select name="message_type" id="message_type">
+            <option value="site_error">site error</option>
+            <option value="site_opinion">opinion on site</option>
+            <option value="site_question">question about the site</option>
+            <option value="site_advertisement">advertisement</option>
+        </select>
+        <br>
+        <label for="message_text" >message:</label>
+        <br>
+        <textarea id="message_text" name="message_text" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
