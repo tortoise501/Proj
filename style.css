@@ -68,6 +68,16 @@ h2{
     padding: 5px;
     margin-bottom: 15px;
 }
+.content .games .imgs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content .games .imgs img{
+    object-fit: cover;
+    max-width: 32%;
+    border-radius: 10px;
+}
 .content hr{
     color: var(--accent);
 }
@@ -94,5 +104,21 @@ h2{
     color: black;
 }
 .tier_list img{
+    width: 50px;
+}
 
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100px;
+    border-top: solid var(--accent);
+    margin-top: 15px;
+}
+.footer .links{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
