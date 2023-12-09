@@ -1,30 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Koty</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="location.href='index_en.html'" style="background-image: url(imgs/english.png); background-repeat: no-repeat; background-size: cover;">english</button>
-    <button onclick="location.href='index_pl.html'" style="background-image: url(imgs/polish.png); background-repeat: no-repeat; background-size: cover;">polski</button>
+    <div class="header">
+        <div class="welcome">
+            <h1>Koty</h1>
+        </div>
+        <div class="navigation">
+            <button onclick="location.href='#Koty'">Opis Kotów</button>
+            <button onclick="location.href='#Moje_koty'">Moje Koty</button>
+            <button onclick="location.href='#Koty_w_tabeli'">Koty w tabeli</button>
+            <button onclick="location.href='#Zle_koty'">Złe koty</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="main" id="Koty">
+            <h2>Koty</h2>
+            <p>
+                Kot domowy (Felis catus, również Felis silvestris catus) - udomowiony gatunek ssaka z rzędu drapieżnych z rodziny kotowatych. 
+                Koty zostały udomowione około 9500 lat temu i są obecnie najpopularniejszymi zwierzętami domowymi na świecie. 
+                Gatunek ten prawdopodobnie pochodzi od kota nubijskiego, przy czym w Europie krzyżował się ze żbikiem. 
+                Przez IUCN/SSC jest uznawany za gatunek inwazyjny. 
+            </p>
+        </div>
+        <hr>
+        <div class="Moje-Koty" id="Moje_koty">
+            <h2>Moje Koty</i></h2>
+            <dl>
+                <dt><h3>Alisa</h3></dt>
+                <dd>
+                    <div class="imgs">
+                    <img src="imgs/al1.jpg" alt="Alisa1">
+                    <img src="imgs/al2.jpg" alt="Alisa2">
+                    <img src="imgs/al3.jpg" alt="Alisa3">
+                    </div>
+                    <p>
+                        To jest Alisa. Ona ma 11 lat. W dzień ona lubi spać a w nocy lubi bardzo głośnie krzyczeć i biegać po całym mieszkaniu.
+                        
+                    </p>
+                </dd>
+                <dt><h3>Musia</h3></dt>
+                <dd>
+                    <div class="imgs">
+                    <img src="imgs/mu1.jpg" alt="Musia1">
+                    <img src="imgs/mu2.jpg" alt="Musia2">
+                    <img src="imgs/mu3.jpg" alt="Musia3">
+                    </div>
+                    <p>
+                        To jest Musia. Ona ma 6 lat. Pierwsze miesiące swojego życia mieszkała na ulicy gdzie zainfekowała swoje oczy. Bardzo lubi jeść i walczyć z Alisą. 
+                        
+                    </p>
+                </dd>
+                <dt><h3>Zdjęcia Musi i Alisy razem</h3></dt>
+                <dd>
+                    <div class="imgs">
+                    <img src="imgs/almu1.jpg" alt="MusAlisa1">
+                    <img src="imgs/almu3.jpg" alt="MusAlisa2">
+                    <img src="imgs/almu4.jpg" alt="MusAlisa3">
+                    </div>
+                    <p>
+                        Jest dużo więcej tych zdjęć ale ciężko ich znaleźć.
+                    </p>
+                </dd>
+            </dl>
+        </div>
+        <hr>
+        <div class="Koty-w-tabeli" id="Koty_w_tabeli">
+            <h2>Lista Tierów</h2>
+            <table>
+                <tr>
+                    <td><img src="imgs/al4.jpg" alt="Alisa"></td>
+                    <td rowspan="2"><img src="imgs/mu4.jpg" alt="Musia"></td>
+                    <td><img src="imgs/almu5.jpg" alt="Alisa"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="imgs/rnd1.jpg" alt=""></td>
+                    <td><img src="imgs/mu5.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><img src="imgs/almu2.jpg" alt=""></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="Zle-koty" id="Zle_koty">
+            <h2>Złe Koty</h2>
+            <ul>
+                <li><div><h5>Darkness!!!</h5><img src="imgs/ek.jpg" alt=""></div></li>
+                <li><div><h5>Gun safety</h5><img src="imgs/ek2.jpg" alt=""></div></li>
+                <li><div><h5>He ate kids !!!</h5><img src="imgs/ek3.jpg" alt=""></div></li>
+                <li><div><h5>Criminals!!!</h5><img src="imgs/ek4.jpg" alt=""></div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="links">
+            <a href="gameLinks.html">Gry Paradox na Steam</a>
+            <a href="form.html">Skontaktuj się ze mną</a>
+            <a href="https://github.com/tortoise501/Proj">Strona GitHub tego serwisu</a>
+            <a href="resources.html">Użyte zasoby</a>
+        </div>
+        <p>🐢 &copy; Danylo Sztukin, tlumaczenie na polski - chat gpt</p>
+    </div>
 </body>
 </html>
-<style>
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height:100vh;
-    }
-    img{
-        width: 100%;
-    }
-    button{
-        height: 100px;
-        width:200px;
-        color:white;
-        text-shadow: 2px 2px 1px black;
-        font-size: 20px;
-    }
-</style>
