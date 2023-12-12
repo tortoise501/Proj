@@ -6,26 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="action.php">
-        <label for="e-mail">Give me your E-mail</label>
-        <input type="email" id="e-mail" placeholder="Type your E-mail">
-        <br>
-        <label for="name">How can i call you</label>
-        <input type="text" placeholder="type your name">
-        <br>
-        <label for="message_type">Select type of your massage</label>
+    <form action="index.html">
+        <h1>Skontaktuj się ze mną</h1>
+        <p>
+            <label for="e-mail">E-mail:</label>
+            <input type="email" id="e-mail" placeholder="Podaj E-mail" required>
+        </p>
+        <p>
+        <label for="name">Imie/Nazwisko/pseudonim</label>
+        <input type="text" placeholder="Jak moge ci nazywać?">
+        </p>
+        <p>
+        <label for="message_type">Wybierz rodzaj powiadomienia</label>
         <select name="message_type" id="message_type">
-            <option value="site_error">site error</option>
-            <option value="site_opinion">opinion on site</option>
-            <option value="site_question">question about the site</option>
-            <option value="site_advertisement">advertisement</option>
+            <option value="site_error">błąd na stronie</option>
+            <option value="site_opinion">opinia o stronie</option>
+            <option value="site_question">pytanie dotyczące strony</option>
+            <option value="site_advertisement">reklama</option>
         </select>
+        </p>
+        <p>
+        <label for="message_text" >Powiadomienie:</label>
         <br>
-        <label for="message_text" >message:</label>
-        <br>
-        <textarea id="message_text" name="message_text" rows="4" cols="50"></textarea>
-        <br>
-        <input type="submit" value="Send">
+        <textarea id="message_text" name="message_text" rows="4" cols="50" required></textarea>
+        </p>
+        <input type="submit" value="Wyślij">
     </form>
 </body>
 </html>
+<style>
+    body{
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color:royalblue;
+    }
+    form{
+        background-color: white;
+        padding: 60px 20px;
+        border-radius: 20px;
+    }
+    label{
+        margin-top: 20px;
+    }
+</style>
